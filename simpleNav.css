@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section{
+    background-color: darkgray;
+    height: 15vh;
+    border: 1px solid;
+}
+
+.container{
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+nav{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    
+}
+
+.link ul li{
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+.logo h1 img{
+    width: 66px;
+    margin:0 20px;
+    border-radius: 40px;
+
+}
+
+.logo h1 img:hover{
+    background-color: rgb(165, 224, 36);
+    color: rgb(11, 8, 11);
+    box-shadow: 10px 10px 15px ;
+    padding: 5px 5px;
+    /* border-radius: 20px; */
+}
+
+.link ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    margin: 0 20px;
+    padding: 15px 10px;
+    font-size: 17px;
+}
+
+.link ul li a:hover{
+    background-color: rgb(157, 191, 56);
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+}
+
+.search input{
+    margin: 10px 10px 0 0;
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+button{
+    margin-right: 25px;
+    padding: 6px 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(223, 205, 205);
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+i{
+    font-size: 18px;
+    color: rgb(251, 241, 241);
+}
+
+.dropdown_manu{
+    display: none;
+    position: absolute;
+    background-color: darkgray;
+    
+}
+
+.dropdown_manu ul{
+    display: inline-block;
+}
+
+.dropdown_manu ul li{
+    display: block;
+    
+}
+
+.link ul li:hover .dropdown_manu{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.frontend{
+    display: none;
+    position: absolute;
+    background-color: darkgray;
+    margin-top: 20px;
+
+}
+
+.frontend ul{
+    display: inline-block;
+    margin:  0 5px;
+}
+
+.frontend ul li{
+    display: block;
+}
+
+.dropdown_manu ul li:hover .frontend {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 157px;
+    background-color: darkgray;
+    
+}
+
+.backend{
+    display: none;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.dropdown_manu ul li:hover .backend{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 157px;
+    background-color: darkgray;
+    
+}
